@@ -1,7 +1,21 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+  <style>
+    html,body{
+      overflow: hidden
+    }
+    
+  </style>
   <meta charset="utf-8">
+  <script>
+    function disableScroll(event) {
+      event.preventDefault();
+    }
+
+    // イベントと関数を紐付け
+    document.addEventListener('touchmove', disableScroll, { passive: false });
+  </script>
   <title></title>
 </head>
 <body>
